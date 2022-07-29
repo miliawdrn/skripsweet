@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2022 at 05:57 AM
+-- Generation Time: Jul 29, 2022 at 07:26 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -192,31 +192,42 @@ INSERT INTO `specialist_user` (`specialist_id`, `role_id`, `specialist_nik`, `sp
 -- Indexes for table `artwork_draft`
 --
 ALTER TABLE `artwork_draft`
-  ADD PRIMARY KEY (`drafter_id`);
+  ADD PRIMARY KEY (`drafter_id`),
+  ADD KEY `jo_number` (`jo_number`);
 
 --
 -- Indexes for table `artwork_final`
 --
 ALTER TABLE `artwork_final`
-  ADD PRIMARY KEY (`corrector_id`);
+  ADD PRIMARY KEY (`corrector_id`),
+  ADD KEY `jo_number` (`jo_number`);
 
 --
 -- Indexes for table `attachment_doc`
 --
 ALTER TABLE `attachment_doc`
-  ADD PRIMARY KEY (`specialist_id`);
+  ADD PRIMARY KEY (`specialist_id`),
+  ADD KEY `jo_number` (`jo_number`);
+
+--
+-- Indexes for table `corrector_comment`
+--
+ALTER TABLE `corrector_comment`
+  ADD KEY `jo_number` (`jo_number`);
 
 --
 -- Indexes for table `corrector_user`
 --
 ALTER TABLE `corrector_user`
-  ADD PRIMARY KEY (`corrector_id`);
+  ADD PRIMARY KEY (`corrector_id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- Indexes for table `drafter_user`
 --
 ALTER TABLE `drafter_user`
-  ADD PRIMARY KEY (`drafter_id`);
+  ADD PRIMARY KEY (`drafter_id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- Indexes for table `job_order`
@@ -234,7 +245,8 @@ ALTER TABLE `master_role`
 -- Indexes for table `specialist_user`
 --
 ALTER TABLE `specialist_user`
-  ADD PRIMARY KEY (`specialist_id`);
+  ADD PRIMARY KEY (`specialist_id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -287,6 +299,52 @@ ALTER TABLE `master_role`
 --
 ALTER TABLE `specialist_user`
   MODIFY `specialist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `artwork_draft`
+--
+ALTER TABLE `artwork_draft`
+  ADD CONSTRAINT `artwork_draft_ibfk_1` FOREIGN KEY (`jo_number`) REFERENCES `job_order` (`jo_number`);
+
+--
+-- Constraints for table `artwork_final`
+--
+ALTER TABLE `artwork_final`
+  ADD CONSTRAINT `artwork_final_ibfk_1` FOREIGN KEY (`jo_number`) REFERENCES `job_order` (`jo_number`);
+
+--
+-- Constraints for table `attachment_doc`
+--
+ALTER TABLE `attachment_doc`
+  ADD CONSTRAINT `attachment_doc_ibfk_1` FOREIGN KEY (`jo_number`) REFERENCES `job_order` (`jo_number`);
+
+--
+-- Constraints for table `corrector_comment`
+--
+ALTER TABLE `corrector_comment`
+  ADD CONSTRAINT `corrector_comment_ibfk_1` FOREIGN KEY (`jo_number`) REFERENCES `job_order` (`jo_number`);
+
+--
+-- Constraints for table `corrector_user`
+--
+ALTER TABLE `corrector_user`
+  ADD CONSTRAINT `corrector_user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `master_role` (`role_id`);
+
+--
+-- Constraints for table `drafter_user`
+--
+ALTER TABLE `drafter_user`
+  ADD CONSTRAINT `drafter_user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `master_role` (`role_id`);
+
+--
+-- Constraints for table `specialist_user`
+--
+ALTER TABLE `specialist_user`
+  ADD CONSTRAINT `specialist_user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `master_role` (`role_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
