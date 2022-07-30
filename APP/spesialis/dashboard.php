@@ -80,7 +80,7 @@
                                         <td>GMO</td>
                                         <td>Drafting</td>
                                         <td>
-                                            <button class="btn btn-danger" type="button" onclick="">Details</button>
+                                            <button class="btn btn-danger" type="button" href="jo_details.php">Details</button>
                                         </td>
                                     </tr>
                                 </tbody>

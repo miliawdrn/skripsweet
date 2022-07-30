@@ -31,149 +31,224 @@
         <?php include ("sidebar.php") ?>
         <div class="content">
             <div class="col-md-12 py-3 px-3">
-                            <div class="mb-3">
-                                <label for="JONumber" class="form-label">JO Number</label>
-                                <input type="text" class="form-control" id="JONumber" disabled>
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputDate" class="form-label">Input Date</label>
-                                <input type="text" class="form-control" id="InputDate">
-                            </div>
-                            <div class="mb-3">
-                                <label for="DueDate" class="form-label">Due Date</label>
-                                <input type="text" class="form-control" id="DueDate">
-                            </div>
-                            <div class="mb-3">
-                                <label for="ProductName" class="form-label">Product Name</label>
-                                <input type="text" class="form-control" id="ProductName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="GenericName" class="form-label">Generic Name</label>
-                                <input type="text" class="form-control" id="GenericName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="DrugCategory" class="form-label">Drug Category</label>
-                                <select class="form-select mb-3" aria-label=".form-select-lg example">
+                <div class="row">
+                    <div class="col">
+                        <label for="JONumber" class="form-label">JO Number</label>
+                        <input type="text" class="form-control" placeholder="JO Number" aria-label="JONumber">
+                    </div>
+                    <div class="col py-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Registrasi</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Launching</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">New</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Change</label>
+                        </div>
+                        <button class="btn btn-warning" type="button" onclick="" style="float-right">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="formFile" class="form-label">Input Date</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="formFile" class="form-label">Due Date</label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" placeholder="Product name" id="ProductName" aria-label="ProductName">
+                    </div>
+                    <div class="col">
+                        <label for="GenericName" class="form-label">Generic Name</label>
+                        <input type="text" class="form-control" placeholder="GenericName" id="GenericName" aria-label="GenericName">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="DrugCategory" class="form-label">Drug Category</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example">
                                     <option selected disabled>Drug Category</option>
                                     <option value="1">Obat Bebas</option>
                                     <option value="2">Obat Keras</option>
                                     <option value="3">Obat Bebas Terbatas</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="DossageForm" class="form-label">Dossage Form</label>
-                                <input type="text" class="form-control" id="DossageForm">
-                            </div>
-                            <div class="mb-3">
-                                <label for="ROA" class="form-label">Route Of Administration</label>
-                                <input type="text" class="form-control" id="ROA">
-                            </div>
-                            <div class="mb-3">
-                                <label for="Storage" class="form-label">Storage</label>
-                                <input type="text" class="form-control" id="Storage">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mfg" class="form-label">Manufactured By</label>
-                                <input type="text" class="form-control" id="mfg">
-                            </div>
-                            <div class="mb-3">
-                                <label for="for" class="form-label">For</label>
-                                <input type="text" class="form-control" id="for">
-                            </div>
-                            <div class="mb-3">
-                                <label for="marketed" class="form-label">Marketed By</label>
-                                <input type="text" class="form-control" id="marketed">
-                            </div>
-                            <div class="mb-3">
-                                <label for="imported" class="form-label">Imported By</label>
-                                <input type="text" class="form-control" id="imported">
-                            </div>
-                            <div class="mb-3">
-                                <label for="licensed" class="form-label">Under License</label>
-                                <input type="text" class="form-control" id="licensed">
-                            </div>
-                            <div class="mb-3">
-                                <label for="distributed" class="form-label">Distributed By</label>
-                                <input type="text" class="form-control" id="distributed">
-                            </div>
-                            <div class="mb-3">
-                                <label for="cc" class="form-label">No Change Control</label>
-                                <input type="text" class="form-control" id="cc">
-                            </div>
-                            <div class="mb-3">
-                                <label for="ccDetail" class="form-label">Change Detail</label>
-                                <textarea class="form-control" id="ccDetail" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="cc" class="form-label">No Change Control</label>
-                                <input type="text" class="form-control" id="cc">
-                            </div>
-                            <div class="mb-3">
-                                <label for="Composition" class="form-label">Composition</label>
-                                <input type="text" class="form-control" id="Composition">
-                            </div>
-                            <div class="mb-3">
-                                <label for="presentation" class="form-label">Presentation</label>
-                                <input type="text" class="form-control" id="presentation">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nie" class="form-label">NIE</label>
-                                <input type="text" class="form-control" id="nie">
-                            </div>
-                            <div class="mb-3">
-                                <label for="packaging" class="form-label">Packaging</label>
-                                <input type="text" class="form-control" id="packaging">
-                            </div>
-                            <div class="mb-3">
-                                <label for="no-item" class="form-label">No Item</label>
-                                <input type="text" class="form-control" id="no-item">
-                            </div>
-                            <div class="mb-3">
-                                <label for="dimension" class="form-label">Dimension</label>
-                                <input type="text" class="form-control" id="dimension">
-                            </div>
-                            <div class="mb-3">
-                                <label for="material" class="form-label">Material</label>
-                                <input type="text" class="form-control" id="material">
-                            </div>
-                            <div class="mb-3">
-                                <label for="spesialis" class="form-label">Specialist</label>
-                                <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                    <option selected disabled>Specialist</option>
-                                    <option value="1">GMO</option>
-                                    <option value="2">YKN</option>
-                                    <option value="3">MMI</option>
-                                    <option value="4">MEA</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="designer" class="form-label">Designer</label>
-                                <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                    <option selected disabled>Designer</option>
-                                    <option value="1">DYA</option>
-                                    <option value="2">DDN</option>
-                                    <option value="3">HAO</option>
-                                    <option value="4">HDA</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="corrector" class="form-label">Corrector</label>
-                                <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                    <option selected disabled>Corrector</option>
-                                    <option value="1">EDI</option>
-                                    <option value="2">BSM</option>
-                                    <option value="3">NHT</option>
-                                    <option value="4">NAH</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="attachment" class="form-label">Attachment</label>
-                                <textarea class="form-control" id="attachment" rows="3" placeholder="Upload attachment"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <button class="btn btn-danger" type="button" onclick="">Submit</button>
-                                <button class="btn btn-danger" type="button" onclick="">Cancel</button>
-                            </div>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="DossageForm" class="form-label">Dossage Form</label>
+                        <input type="text" class="form-control" placeholder="Dossage Form" id="DossageForm" aria-label="DossageForm">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ROA" class="form-label">Route Of Administration</label>
+                        <input type="text" class="form-control" placeholder="Route Of Administration" id="ROA" aria-label="ROA">
+                    </div>
+                    <div class="col">
+                        <label for="Storage" class="form-label">Storage</label>
+                        <input type="text" class="form-control" placeholder="Storage" id="Storage" aria-label="Storage">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="mfg" class="form-label">Manufactured By</label>
+                        <input type="text" class="form-control" placeholder="Manufactured By" id="mfg" aria-label="mfg">
+                    </div>
+                    <div class="col">
+                        <label for="for" class="form-label">For</label>
+                        <input type="text" class="form-control" placeholder="For" id="for" aria-label="for">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="mkt" class="form-label">Marketed By</label>
+                        <input type="text" class="form-control" placeholder="Marketed By" id="mkt" aria-label="mkt">
+                    </div>
+                    <div class="col">
+                        <label for="imported" class="form-label">Imported By</label>
+                        <input type="text" class="form-control" placeholder="Imported By" id="imported" aria-label="imported">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="licensed" class="form-label">Under License</label>
+                        <input type="text" class="form-control" placeholder="Under License" id="license" aria-label="license">
+                    </div>
+                    <div class="col">
+                        <label for="distributed" class="form-label">Distributed By</label>
+                        <input type="text" class="form-control" placeholder="Distributed By" id="distributed" aria-label="distributed">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ccNumber" class="form-label">No Change Control</label>
+                        <textarea class="form-control" id="ccNumber" rows="3"></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="ccDetail" class="form-label">Change Control Detail</label>
+                        <textarea class="form-control" id="ccDetail" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="composition" class="form-label">Composition</label>
+                        <textarea class="form-control" id="composition" rows="3"></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="persentation" class="form-label">Persentation</label>
+                        <textarea class="form-control" id="persentation" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="nie" class="form-label">NIE</label>
+                        <input type="text" class="form-control" placeholder="NIE" id="nie" aria-label="nie">
+                    </div>
+                    <div class="col">
+                        <label for="distributed" class="form-label">Distributed By</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected disabled>Packaging type</option>
+                            <option value="1">Doos</option>
+                            <option value="2">Label</option>
+                            <option value="3">Poly</option>
+                            <option value="4">Alufoil</option>
+                            <option value="5">Alutube</option>
+                            <option value="6">Leaflet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="NoItem" class="form-label">No Item</label>
+                        <input type="text" class="form-control" placeholder="No Item" id="NoItem" aria-label="NoItem">
+                    </div>
+                    <div class="col">
+                        <label for="dimension" class="form-label">Dimension</label>
+                        <input type="text" class="form-control" placeholder="20x30x50 mm" id="dimension" aria-label="dimension">
+                    </div>
+                    <div class="col">
+                        <label for="material" class="form-label">Material</label>
+                        <input type="text" class="form-control" placeholder="Ivory 320 gsm" id="material" aria-label="material">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="specialist" class="form-label">Specialist</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected disabled>Specialist</option>
+                            <option value="1">GMO</option>
+                            <option value="2">a</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="corrector" class="form-label">Corrector</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected disabled>Corrector</option>
+                            <option value="1">Emilia</option>
+                            <option value="2">c</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="drafter" class="form-label">Drafter</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example">
+                            <option selected disabled>Drafter</option>
+                            <option value="1">Emilia</option>
+                            <option value="2">c</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <label for="Attachment" class="form-label">Attachment</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01">
+                        <button type="submit" class="btn btn-primary">Download Attachment</button>
+                    </div>
+                    <div class="col">
+                        <label for="ArtwrokDraft" class="form-label">Artwrok Draft</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01" disabled>
+                        <button type="submit" class="btn btn-primary" disabled>Download Artwrok Draft</button>
+                    </div>
+                    <div class="col">
+                        <label for="ArtwrokFinal" class="form-label">Artwrok Final</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01" disabled>
+                        <button type="submit" class="btn btn-primary" disabled>Download Artwrok Final</button>
+                    </div>
+                    
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-danger" type="button" onclick="">Submit</button>
+                    <button class="btn btn-warning" type="button" onclick="">Cancel</button>
+                </div>
+
             </div>
         </div>
     </div>

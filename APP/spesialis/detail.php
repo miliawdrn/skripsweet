@@ -18,15 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        th {
-            width: 20%;
-            }
-        td {
-            width: fit-content;
+        .form-label {
+            font-weight : bold;
+            margin-top : 5px;
         }
     </style>
-
-    <title>Job Order Details</title>
+    <title>Detail Job Order</title>
   </head>
   <body>
     
@@ -34,160 +31,224 @@
         <?php include ("sidebar.php") ?>
         <div class="content">
             <div class="col-md-12 py-3 px-3">
-                    <!--<div class="card">-->
-                        <!--<div class="card-body">-->
-                            <div class="container-fluid px-1">
-                                <table class="table table-bordered">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Registration</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                        <label class="form-check-label" for="inlineRadio3">Launching</label>
-                                    </div>
-                                    <tbody>
-                                        <tr>
-                                            <th>JO</th>
-                                            <td>emilia</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Status</th>
-                                            <td>Registration</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Input Date</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Due Date</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Product Name</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Generic Name</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Drug Category</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Dosage Form</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Route Of Administration</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Storage</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Manufactured by</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>For</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Marketed by</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Imported by</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Under License</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Distributed by</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>No Change Control</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Change Detail</th>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th>Composition</th>
-                                            <td>emilia</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Presentation</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>NIE</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Packaging</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Dimension</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Material</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Item Number</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Specialist</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Designer</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Corrector</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Attachment</th>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Process</th>
-                                            <td>Drafting</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p> Attachment : <br>
-                                    <ul>
-                                        <li>Copy of NIE</li>
-                                        <li>Machine drawing or trial data</li>
-                                        <li>Existing material specification</li>
-                                        <li>Approved SFP</li>
-                                        <li>Original file in freehand/Adobe Illustrator format for
-                                            package insert / logo image / free design</li>
-                                    </ul>
-                                </p>
-                                <button class="btn btn-danger" type="button" onclick="">Edit</button>
-                                <button class="btn btn-danger" type="button" onclick="">Cancel</button>
-                            </div>
-                        <!--</div>-->
-                    <!--</div>-->
+                <div class="row">
+                    <div class="col">
+                        <label for="JONumber" class="form-label">JO Number</label>
+                        <input type="text" class="form-control" placeholder="JO Number" aria-label="JONumber" disabled>
+                    </div>
+                    <div class="col py-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" disabled>
+                            <label class="form-check-label" for="inlineCheckbox1">Registrasi</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" disabled>
+                            <label class="form-check-label" for="inlineCheckbox2">Launching</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                            <label class="form-check-label" for="inlineCheckbox3">New</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" disabled>
+                            <label class="form-check-label" for="inlineCheckbox4">Change</label>
+                        </div>
+                        <button class="btn btn-warning" type="button" onclick="" style="float-right">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="formFile" class="form-label">Input Date</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="formFile" class="form-label">Due Date</label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" placeholder="Product name" id="ProductName" aria-label="ProductName" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="GenericName" class="form-label">Generic Name</label>
+                        <input type="text" class="form-control" placeholder="GenericName" id="GenericName" aria-label="GenericName" disabled>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="DrugCategory" class="form-label">Drug Category</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" disabled>
+                                    <option selected disabled>Drug Category</option>
+                                    <option value="1">Obat Bebas</option>
+                                    <option value="2">Obat Keras</option>
+                                    <option value="3">Obat Bebas Terbatas</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="DossageForm" class="form-label">Dossage Form</label>
+                        <input type="text" class="form-control" placeholder="Dossage Form" id="DossageForm" aria-label="DossageForm" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ROA" class="form-label">Route Of Administration</label>
+                        <input type="text" class="form-control" placeholder="Route Of Administration" id="ROA" aria-label="ROA" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="Storage" class="form-label">Storage</label>
+                        <input type="text" class="form-control" placeholder="Storage" id="Storage" aria-label="Storage" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="mfg" class="form-label">Manufactured By</label>
+                        <input type="text" class="form-control" placeholder="Manufactured By" id="mfg" aria-label="mfg" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="for" class="form-label">For</label>
+                        <input type="text" class="form-control" placeholder="For" id="for" aria-label="for" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="mkt" class="form-label">Marketed By</label>
+                        <input type="text" class="form-control" placeholder="Marketed By" id="mkt" aria-label="mkt" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="imported" class="form-label">Imported By</label>
+                        <input type="text" class="form-control" placeholder="Imported By" id="imported" aria-label="imported" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="licensed" class="form-label">Under License</label>
+                        <input type="text" class="form-control" placeholder="Under License" id="license" aria-label="license" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="distributed" class="form-label">Distributed By</label>
+                        <input type="text" class="form-control" placeholder="Distributed By" id="distributed" aria-label="distributed" disabled>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ccNumber" class="form-label">No Change Control</label>
+                        <textarea class="form-control" id="ccNumber" rows="3" disabled></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="ccDetail" class="form-label">Change Control Detail</label>
+                        <textarea class="form-control" id="ccDetail" rows="3" disabled></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="composition" class="form-label">Composition</label>
+                        <textarea class="form-control" id="composition" rows="3" disabled></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="persentation" class="form-label">Persentation</label>
+                        <textarea class="form-control" id="persentation" rows="3" disabled></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="nie" class="form-label">NIE</label>
+                        <input type="text" class="form-control" placeholder="NIE" id="nie" aria-label="nie" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="distributed" class="form-label">Distributed By</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" disabled>
+                            <option selected disabled>Packaging type</option>
+                            <option value="1">Doos</option>
+                            <option value="2">Label</option>
+                            <option value="3">Poly</option>
+                            <option value="4">Alufoil</option>
+                            <option value="5">Alutube</option>
+                            <option value="6">Leaflet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="NoItem" class="form-label">No Item</label>
+                        <input type="text" class="form-control" placeholder="No Item" id="NoItem" aria-label="NoItem" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="dimension" class="form-label">Dimension</label>
+                        <input type="text" class="form-control" placeholder="20x30x50 mm" id="dimension" aria-label="dimension" disabled>
+                    </div>
+                    <div class="col">
+                        <label for="material" class="form-label">Material</label>
+                        <input type="text" class="form-control" placeholder="Ivory 320 gsm" id="material" aria-label="material" disabled>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="specialist" class="form-label">Specialist</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" disabled>
+                            <option selected disabled>Specialist</option>
+                            <option value="1">GMO</option>
+                            <option value="2">a</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="corrector" class="form-label">Corrector</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" disabled>
+                            <option selected disabled>Corrector</option>
+                            <option value="1">Emilia</option>
+                            <option value="2">c</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="drafter" class="form-label">Drafter</label>
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" disabled>
+                            <option selected disabled>Drafter</option>
+                            <option value="1">Emilia</option>
+                            <option value="2">c</option>
+                            <option value="3">b</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <label for="Attachment" class="form-label">Attachment</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01" disabled>
+                        <button type="submit" class="btn btn-primary">Download Attachment</button>
+                    </div>
+                    <div class="col">
+                        <label for="ArtwrokDraft" class="form-label">Artwrok Draft</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01" disabled>
+                        <button type="submit" class="btn btn-primary">Download Artwrok Draft</button>
+                    </div>
+                    <div class="col">
+                        <label for="ArtwrokFinal" class="form-label">Artwrok Final</label>
+                        <input type="file" class="form-control mb-2" id="inputGroupFile01" disabled>
+                        <button type="submit" class="btn btn-primary">Download Artwrok Final</button>
+                    </div>
+                    
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-danger" type="button" onclick="" disabled>Submit</button>
+                    <button class="btn btn-warning" type="button" onclick="">Cancel</button>
+                </div>
+
             </div>
         </div>
     </div>

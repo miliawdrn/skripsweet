@@ -30,23 +30,25 @@
             </div>
             <ul class="list-unstyled px-3 pt-5">
                 <li class="active">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-th-large"></i>&nbsp Job Order List</a>
+                    <a href="dashboard.php" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-th-large"></i>&nbsp Job Order List</a>
                 </li>
                 <li class="">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-plus-square"></i>&nbsp  Add Job Order</a>
+                    <a href="add_jo.php" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-plus-square"></i>&nbsp  Add Job Order</a>
                 </li>
                 <li class="">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-bell"></i>&nbsp Notification</a>
-                </li>
-                <!--
-                <li class="">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-list"></i>&nbsp Job Order List</a>
-                </li>-->
-                <li class="">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-chart-bar"></i>&nbsp Analytics</a>
+                    <a href="notifications.php" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-bell"></i>&nbsp Notification</a>
                 </li>
                 <li class="">
-                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-user"></i>&nbsp Account</a>
+                    <a href="analytics.php" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-chart-bar"></i>&nbsp Analytics</a>
+                </li>
+                <li class="">
+                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-user-cog"></i>&nbsp User Management</a>
+                </li>
+                <li class="">
+                    <a href="account.php" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-user"></i>&nbsp Account</a>
+                </li>
+                <li class="">
+                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
                 </li>
                 <hr class="h-color mx-2">
                 <form class="text-decoration-none py-2 d-block">
