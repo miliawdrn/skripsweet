@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Account</title>
+    <title>User Management Edit</title>
   </head>
   <body>
     
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <button class="btn btn-danger" type="button" onclick="">Edit</button>
+                    <button class="btn btn-danger" type="button" onclick="">Save</button>
                     <button class="btn btn-warning" type="button" onclick="">Cancel</button>
                 </div>
 

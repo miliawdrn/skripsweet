@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Account</title>
+    <title>Account Edit</title>
   </head>
   <body>
     
     <div class="main-container d-flex">
-        <?php include ("sidebar.php") ?>
+        <?php include ("sidebar_designer.php") ?>
         <div class="content">
             <div class="col-md-12 py-3 px-3">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col">
                         <label for="nik" class="form-label">NIK</label>
                         <input type="text" class="form-control" placeholder="12345" id="nik">
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <button class="btn btn-danger" type="button" onclick="">Edit</button>
+                    <button class="btn btn-danger" type="button" onclick="">Save</button>
                     <button class="btn btn-warning" type="button" onclick="">Cancel</button>
                 </div>
 

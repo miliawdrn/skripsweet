@@ -22,7 +22,7 @@
   <body>
     
     <div class="main-container d-flex">
-        <?php include ("sidebar.php") ?>
+        <?php include ("sidebar_corrector.php") ?>
         <div class="content">
             <div class="col-md-12 py-3 px-3">
                 <div class="row">
